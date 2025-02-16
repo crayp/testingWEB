@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../styles/reg.css" />
+    <script src="./reg.js" defer></script>
+  </head>
+  <body>
+    <a href="../html/index.html"><div class="main">На главную</div></a>
+    <div class="container">
+      <div class="regLabel"><h1 id="regLabelText">Регистрация</h1></div>
+      <div class="regBlock">
+        <form>
+          <h1>Личная информация</h1>
+          <input id="secondName" type="text" placeholder="Фамилия" required />
+          <input id="firstName" type="text" placeholder="Имя" required />
+          <input id="otchecsvo" type="text" placeholder="Отчество" required />
+          <div class="birth">
+            <label>Дата рождения</label>
+            <input id="birthDate" type="date" required />
+          </div>
+          <div class="country">
+            <label>Страна</label>
+            <select id="county">
+              <option>Россия</option>
+              <option>Азербайджан</option>
+              <option>Армения</option>
+              <option>Беларусь</option>
+              <option>Кыргызстан</option>
+              <option>Молдова</option>
+              <option>Таджикистан</option>
+              <option>Туркменистан</option>
+              <option>Узбекистан</option>
+            </select>
+          </div>
+          <h1>Контактные данные</h1>
+          <input id="email" type="email" placeholder="E-mail" required />
+          <input
+            id="firstName"
+            type="tel"
+            placeholder="Номер телефона"
+            required
+          />
+          <h1>Пароль</h1>
+          <input
+            id="fisrtPassword"
+            type="password"
+            placeholder="Придумайте пароль"
+            required
+          />
+          <input
+            id="fisrtPassword"
+            type="password"
+            placeholder="Повторите введенный пароль"
+            required
+          />
+          <h1>Соглашения</h1>
+          <div class="checkboxes">
+            <input id="privicyPolitics" type="checkbox" required /><label
+              >Ознакомлен с политикой конфиденциальности</label
+            >
+          </div>
+          <div class="checkboxes">
+            <input id="userPolitics" type="checkbox" required /><label
+              >Ознакомлен с пользовательским соглашением</label
+            >
+          </div>
+          <div>
+            <input id="regButton" type="submit" value="Зарегистрироваться" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
